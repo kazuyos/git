@@ -4,16 +4,6 @@
 <head>
   <meta charset="utf-8">
   <title>RAID検索ツール</title>
-  <style>
-    .fixed01 {
-      position: fixed;
-      top: -1px;
-      left: -1px;
-      width: 100%;
-      height: 100%;
-      border: 1px solid #ccc;
-    }
-  </style>
   <style scoped>
     .v-data-table--fixed-header>>>th:nth-child(1) {
       position: sticky !important;
@@ -58,173 +48,172 @@
             <td>RAID-6 12+2</td>
             <td>RAID-6 14+2</td>
           </tr>
-          <tr>
-            <td>Flash 2 - 0.4TB</td>
-            <td align="center">{{raidA}} Disk / {{(raidA / 5) * flashA * 4}} TiB {{capaA}}</td>
-            <td align="center">{{raidAb}} Disk / {{(raidAb / 8) * flashA * 9}} TiB</td>
-            <td align="center">{{raidAc}} Disk / {{(raidAc / 11) * flashA * 12}} TiB</td>
-            <td align="center">{{raidAd}} Disk / {{(raidAd / 6) * flashA * 4}} TiB</td>
-            <td align="center">{{raidAe}} Disk / {{(raidAe / 8) * flashA * 6}} TiB</td>
-            <td align="center">{{raidAf}} Disk / {{(raidAf / 10) * flashA * 8}} TiB</td>
-            <td align="center">{{raidAg}} Disk / {{(raidAg / 12) * flashA * 10}} TiB</td>
-            <td align="center">{{raidAh}} Disk / {{(raidAh / 14) * flashA * 12}} TiB</td>
-            <td align="center">{{raidAi}} Disk / {{(raidAi / 16) * flashA * 14}} TiB</td>
+          <td>Flash 2 - 0.4TB</td>
+          <td align="center">{{raidA}} Disk / {{capaA}} TiB </td>
+          <td align="center">{{raidAb}} Disk / {{capaAb}} TiB </td>
+          <td align="center">{{raidAc}} Disk / {{capaAc}} TiB </td>
+          <td align="center">{{raidAd}} Disk / {{capaAd}} TiB </td>
+          <td align="center">{{raidAe}} Disk / {{capaAe}} TiB </td>
+          <td align="center">{{raidAf}} Disk / {{capaAf}} TiB </td>
+          <td align="center">{{raidAg}} Disk / {{capaAg}} TiB </td>
+          <td align="center">{{raidAh}} Disk / {{capaAh}} TiB </td>
+          <td align="center">{{raidAi}} Disk / {{capaAi}} TiB </td>
           </tr>
           <tr>
             <td>Flash 3 - 0.8TB</td>
-            <td align="center">{{raidB}} Disk / {{(raidB / 5) * flashB * 4}} TiB</td>
-            <td align="center">{{raidBb}} Disk / {{(raidBb / 8) * flashB * 9}} TiB</td>
-            <td align="center">{{raidBc}} Disk / {{(raidBc / 11) * flashB * 12}} TiB</td>
-            <td align="center">{{raidBd}} Disk / {{(raidBd / 4) * flashB * 6}} TiB</td>
-            <td align="center">{{raidBe}} Disk / {{(raidBe / 8) * flashB * 6}} TiB</td>
-            <td align="center">{{raidBf}} Disk / {{(raidBf / 10) * flashB * 8}} TiB</td>
-            <td align="center">{{raidBg}} Disk / {{(raidBg / 12) * flashB * 10}} TiB</td>
-            <td align="center">{{raidBh}} Disk / {{(raidBh / 14) * flashB * 12}} TiB</td>
-            <td align="center">{{raidBi}} Disk / {{(raidBi / 16) * flashB * 14}} TiB</td>
+            <td align="center">{{raidB}} Disk / {{capaB}} TiB </td>
+            <td align="center">{{raidBb}} Disk / {{capaBb}} TiB </td>
+            <td align="center">{{raidBc}} Disk / {{capaBc}} TiB </td>
+            <td align="center">{{raidBd}} Disk / {{capaBd}} TiB </td>
+            <td align="center">{{raidBe}} Disk / {{capaBe}} TiB </td>
+            <td align="center">{{raidBf}} Disk / {{capaBf}} TiB </td>
+            <td align="center">{{raidBg}} Disk / {{capaBg}} TiB </td>
+            <td align="center">{{raidBh}} Disk / {{capaBh}} TiB </td>
+            <td align="center">{{raidBi}} Disk / {{capaBi}} TiB </td>
           </tr>
           <tr>
             <td>Flash 3 - 1.6TB</td>
-            <td align="center">{{raidC}} Disk / {{(raidC / 5) * flashC * 4}} TiB</td>
-            <td align="center">{{raidCb}} Disk / {{(raidCb / 8) * flashC * 9}} TiB</td>
-            <td align="center">{{raidCc}} Disk / {{(raidCc / 11) * flashC * 12}} TiB</td>
-            <td align="center">{{raidCd}} Disk / {{(raidCd / 4) * flashC * 6}} TiB</td>
-            <td align="center">{{raidCe}} Disk / {{(raidCe / 8) * flashC * 6}} TiB</td>
-            <td align="center">{{raidCf}} Disk / {{(raidCf / 10) * flashC * 8}} TiB</td>
-            <td align="center">{{raidCg}} Disk / {{(raidCg / 12) * flashC * 10}} TiB</td>
-            <td align="center">{{raidCh}} Disk / {{(raidCh / 14) * flashC * 12}} TiB</td>
-            <td align="center">{{raidCi}} Disk / {{(raidCi / 16) * flashC * 14}} TiB</td>
+            <td align="center">{{raidC}} Disk / {{capaC}} TiB </td>
+            <td align="center">{{raidCb}} Disk / {{capaCb}} TiB </td>
+            <td align="center">{{raidCc}} Disk / {{capaCc}} TiB </td>
+            <td align="center">{{raidCd}} Disk / {{capaCd}} TiB </td>
+            <td align="center">{{raidCe}} Disk / {{capaCe}} TiB </td>
+            <td align="center">{{raidCf}} Disk / {{capaCf}} TiB </td>
+            <td align="center">{{raidCg}} Disk / {{capaCg}} TiB </td>
+            <td align="center">{{raidCh}} Disk / {{capaCh}} TiB </td>
+            <td align="center">{{raidCi}} Disk / {{capaCi}} TiB </td>
           </tr>
           <tr>
             <td>Flash 3 - 3.2TB</td>
-            <td align="center">{{raidD}} Disk / {{(raidD / 5) * flashD * 4}} TiB</td>
-            <td align="center">{{raidDb}} Disk / {{(raidDb / 8) * flashD * 9}} TiB</td>
-            <td align="center">{{raidDc}} Disk / {{(raidDc / 11) * flashD * 12}} TiB</td>
-            <td align="center">{{raidDd}} Disk / {{(raidDd / 4) * flashD * 6}} TiB</td>
-            <td align="center">{{raidDe}} Disk / {{(raidDe / 8) * flashD * 6}} TiB</td>
-            <td align="center">{{raidDf}} Disk / {{(raidDf / 10) * flashD * 8}} TiB</td>
-            <td align="center">{{raidDg}} Disk / {{(raidDg / 12) * flashD * 10}} TiB</td>
-            <td align="center">{{raidDh}} Disk / {{(raidDh / 14) * flashD * 12}} TiB</td>
-            <td align="center">{{raidDi}} Disk / {{(raidDi / 16) * flashD * 14}} TiB</td>
+            <td align="center">{{raidD}} Disk / {{capaD}} TiB </td>
+            <td align="center">{{raidDb}} Disk / {{capaDb}} TiB </td>
+            <td align="center">{{raidDc}} Disk / {{capaDc}} TiB </td>
+            <td align="center">{{raidDd}} Disk / {{capaDd}} TiB </td>
+            <td align="center">{{raidDe}} Disk / {{capaDe}} TiB </td>
+            <td align="center">{{raidDf}} Disk / {{capaDf}} TiB </td>
+            <td align="center">{{raidDg}} Disk / {{capaDg}} TiB </td>
+            <td align="center">{{raidDh}} Disk / {{capaDh}} TiB </td>
+            <td align="center">{{raidDi}} Disk / {{capaDi}} TiB </td>
           </tr>
           <tr>
             <td>Flash 4 - 1.92TB</td>
-            <td align="center">{{raidE}} Disk / {{(raidE / 5) * flashE * 4}} TiB</td>
-            <td align="center">{{raidEb}} Disk / {{(raidEb / 8) * flashE * 9}} TiB</td>
-            <td align="center">{{raidEc}} Disk / {{(raidEc / 11) * flashE * 12}} TiB</td>
-            <td align="center">{{raidEd}} Disk / {{(raidEd / 4) * flashE * 6}} TiB</td>
-            <td align="center">{{raidEe}} Disk / {{(raidEe / 8) * flashE * 6}} TiB</td>
-            <td align="center">{{raidEf}} Disk / {{(raidEf / 10) * flashE * 8}} TiB</td>
-            <td align="center">{{raidEg}} Disk / {{(raidEg / 12) * flashE * 10}} TiB</td>
-            <td align="center">{{raidEh}} Disk / {{(raidEh / 14) * flashE * 12}} TiB</td>
-            <td align="center">{{raidEi}} Disk / {{(raidEi / 16) * flashE * 14}} TiB</td>
+            <td align="center">{{raidE}} Disk / {{capaE}} TiB </td>
+            <td align="center">{{raidEb}} Disk / {{capaEb}} TiB </td>
+            <td align="center">{{raidEc}} Disk / {{capaEc}} TiB </td>
+            <td align="center">{{raidEd}} Disk / {{capaEd}} TiB </td>
+            <td align="center">{{raidEe}} Disk / {{capaEe}} TiB </td>
+            <td align="center">{{raidEf}} Disk / {{capaEf}} TiB </td>
+            <td align="center">{{raidEg}} Disk / {{capaEg}} TiB </td>
+            <td align="center">{{raidEh}} Disk / {{capaEh}} TiB </td>
+            <td align="center">{{raidEi}} Disk / {{capaEi}} TiB </td>
           </tr>
           <tr>
             <td>Flash 4 - 3.84TB</td>
-            <td align="center">{{raidF}} Disk / {{(raidF / 5) * flashF * 4}} TiB</td>
-            <td align="center">{{raidFb}} Disk / {{(raidFb / 8) * flashF * 9}} TiB</td>
-            <td align="center">{{raidFc}} Disk / {{(raidFc / 11) * flashF * 12}} TiB</td>
-            <td align="center">{{raidFd}} Disk / {{(raidFd / 4) * flashF * 6}} TiB</td>
-            <td align="center">{{raidFe}} Disk / {{(raidFe / 8) * flashF * 6}} TiB</td>
-            <td align="center">{{raidFf}} Disk / {{(raidFf / 10) * flashF * 8}} TiB</td>
-            <td align="center">{{raidFg}} Disk / {{(raidFg / 12) * flashF * 10}} TiB</td>
-            <td align="center">{{raidFh}} Disk / {{(raidFh / 14) * flashF * 12}} TiB</td>
-            <td align="center">{{raidFi}} Disk / {{(raidFi / 16) * flashF * 14}} TiB</td>
+            <td align="center">{{raidF}} Disk / {{capaF}} TiB </td>
+            <td align="center">{{raidFb}} Disk / {{capaFb}} TiB </td>
+            <td align="center">{{raidFc}} Disk / {{capaFc}} TiB </td>
+            <td align="center">{{raidFd}} Disk / {{capaFd}} TiB </td>
+            <td align="center">{{raidFe}} Disk / {{capaFe}} TiB </td>
+            <td align="center">{{raidFf}} Disk / {{capaFf}} TiB </td>
+            <td align="center">{{raidFg}} Disk / {{capaFg}} TiB </td>
+            <td align="center">{{raidFh}} Disk / {{capaFh}} TiB </td>
+            <td align="center">{{raidFi}} Disk / {{capaFi}} TiB </td>
           </tr>
           <tr>
             <td>Flash 4 - 7.68TB</td>
-            <td align="center">{{raidG}} Disk / {{(raidG / 5) * flashG * 4}} TiB</td>
-            <td align="center">{{raidGb}} Disk / {{(raidGb / 8) * flashG * 9}} TiB</td>
-            <td align="center">{{raidGc}} Disk / {{(raidGc / 11) * flashG * 12}} TiB</td>
-            <td align="center">{{raidGd}} Disk / {{(raidGd / 4) * flashG * 6}} TiB</td>
-            <td align="center">{{raidGe}} Disk / {{(raidGe / 8) * flashG * 6}} TiB</td>
-            <td align="center">{{raidGf}} Disk / {{(raidGf / 10) * flashG * 8}} TiB</td>
-            <td align="center">{{raidGg}} Disk / {{(raidGg / 12) * flashG * 10}} TiB</td>
-            <td align="center">{{raidGh}} Disk / {{(raidGh / 14) * flashG * 12}} TiB</td>
-            <td align="center">{{raidGi}} Disk / {{(raidGi / 16) * flashG * 14}} TiB</td>
+            <td align="center">{{raidG}} Disk / {{capaG}} TiB </td>
+            <td align="center">{{raidGb}} Disk / {{capaGb}} TiB </td>
+            <td align="center">{{raidGc}} Disk / {{capaGc}} TiB </td>
+            <td align="center">{{raidGd}} Disk / {{capaGd}} TiB </td>
+            <td align="center">{{raidGe}} Disk / {{capaGe}} TiB </td>
+            <td align="center">{{raidGf}} Disk / {{capaGf}} TiB </td>
+            <td align="center">{{raidGg}} Disk / {{capaGg}} TiB </td>
+            <td align="center">{{raidGh}} Disk / {{capaGh}} TiB </td>
+            <td align="center">{{raidGi}} Disk / {{capaGi}} TiB </td>
           </tr>
           <tr>
             <td>Flash 4 - 15.36TB</td>
-            <td align="center">{{raidH}} Disk / {{(raidH / 5) * flashH * 4}} TiB</td>
-            <td align="center">{{raidHb}} Disk / {{(raidHb / 8) * flashH * 9}} TiB</td>
-            <td align="center">{{raidHc}} Disk / {{(raidHc / 11) * flashH * 12}} TiB</td>
-            <td align="center">{{raidHd}} Disk / {{(raidHd / 4) * flashH * 6}} TiB</td>
-            <td align="center">{{raidHe}} Disk / {{(raidHe / 8) * flashH * 6}} TiB</td>
-            <td align="center">{{raidHf}} Disk / {{(raidHf / 10) * flashH * 8}} TiB</td>
-            <td align="center">{{raidHg}} Disk / {{(raidHg / 12) * flashH * 10}} TiB</td>
-            <td align="center">{{raidHh}} Disk / {{(raidHh / 14) * flashH * 12}} TiB</td>
-            <td align="center">{{raidHi}} Disk / {{(raidHi / 16) * flashH * 14}} TiB</td>
+            <td align="center">{{raidH}} Disk / {{capaH}} TiB </td>
+            <td align="center">{{raidHb}} Disk / {{capaHb}} TiB </td>
+            <td align="center">{{raidHc}} Disk / {{capaHc}} TiB </td>
+            <td align="center">{{raidHd}} Disk / {{capaHd}} TiB </td>
+            <td align="center">{{raidHe}} Disk / {{capaHe}} TiB </td>
+            <td align="center">{{raidHf}} Disk / {{capaHf}} TiB </td>
+            <td align="center">{{raidHg}} Disk / {{capaHg}} TiB </td>
+            <td align="center">{{raidHh}} Disk / {{capaHh}} TiB </td>
+            <td align="center">{{raidHi}} Disk / {{capaHi}} TiB </td>
           </tr>
           <tr>
             <td>SAS 10K 0.6TB</td>
-            <td align="center">{{raidSA}} Disk / {{(raidSA / 5) * SASA * 4}} TiB</td>
-            <td align="center">{{raidSAb}} Disk / {{(raidSAb / 8) * SASA * 9}} TiB</td>
-            <td align="center">{{raidSAc}} Disk / {{(raidSAc / 11) * SASA * 12}} TiB</td>
-            <td align="center">{{raidSAd}} Disk / {{(raidSAd / 4) * SASA * 6}} TiB</td>
-            <td align="center">{{raidSAe}} Disk / {{(raidSAe / 6) * SASA * 8}} TiB</td>
-            <td align="center">{{raidSAf}} Disk / {{(raidSAf / 8) * SASA * 10}} TiB</td>
-            <td align="center">{{raidSAg}} Disk / {{(raidSAg / 10) * SASA * 12}} TiB</td>
-            <td align="center">{{raidSAh}} Disk / {{(raidSAh / 12) * SASA * 14}} TiB</td>
-            <td align="center">{{raidSAi}} Disk / {{(raidSAi / 14) * SASA * 16}} TiB</td>
+            <td align="center">{{raidSA}} Disk / {{capaSA}} TiB </td>
+            <td align="center">{{raidSAb}} Disk / {{capaSAb}} TiB </td>
+            <td align="center">{{raidSAc}} Disk / {{capaSAc}} TiB </td>
+            <td align="center">{{raidSAd}} Disk / {{capaSAd}} TiB </td>
+            <td align="center">{{raidSAe}} Disk / {{capaSAe}} TiB </td>
+            <td align="center">{{raidSAf}} Disk / {{capaSAf}} TiB </td>
+            <td align="center">{{raidSAg}} Disk / {{capaSAg}} TiB </td>
+            <td align="center">{{raidSAh}} Disk / {{capaSAh}} TiB </td>
+            <td align="center">{{raidSAi}} Disk / {{capaSAi}} TiB </td>
           </tr>
           <tr>
             <td>SAS 10K 1.2TB</td>
-            <td align="center">{{raidSB}} Disk / {{(raidSB / 5) * SASB * 4}} TiB</td>
-            <td align="center">{{raidSBb}} Disk / {{(raidSBb / 8) * SASB * 9}} TiB</td>
-            <td align="center">{{raidSBc}} Disk / {{(raidSBc / 11) * SASB * 12}} TiB</td>
-            <td align="center">{{raidSBd}} Disk / {{(raidSBd / 4) * SASB * 6}} TiB</td>
-            <td align="center">{{raidSBe}} Disk / {{(raidSBe / 6) * SASB * 8}} TiB</td>
-            <td align="center">{{raidSBf}} Disk / {{(raidSBf / 8) * SASB * 10}} TiB</td>
-            <td align="center">{{raidSBg}} Disk / {{(raidSBg / 10) * SASB * 12}} TiB</td>
-            <td align="center">{{raidSBh}} Disk / {{(raidSBh / 12) * SASB * 14}} TiB</td>
-            <td align="center">{{raidSBi}} Disk / {{(raidSBi / 14) * SASB * 16}} TiB</td>
+            <td align="center">{{raidSB}} Disk / {{capaSB}} TiB </td>
+            <td align="center">{{raidSBb}} Disk / {{capaSBb}} TiB </td>
+            <td align="center">{{raidSBc}} Disk / {{capaSBc}} TiB </td>
+            <td align="center">{{raidSBd}} Disk / {{capaSBd}} TiB </td>
+            <td align="center">{{raidSBe}} Disk / {{capaSBe}} TiB </td>
+            <td align="center">{{raidSBf}} Disk / {{capaSBf}} TiB </td>
+            <td align="center">{{raidSBg}} Disk / {{capaSBg}} TiB </td>
+            <td align="center">{{raidSBh}} Disk / {{capaSBh}} TiB </td>
+            <td align="center">{{raidSBi}} Disk / {{capaSBi}} TiB </td>
           </tr>
           <tr>
             <td>SAS 10K 1.8TB</td>
-            <td align="center">{{raidSC}} Disk / {{(raidSC / 5) * SASC * 4}} TiB</td>
-            <td align="center">{{raidSCb}} Disk / {{(raidSCb / 8) * SASC * 9}} TiB</td>
-            <td align="center">{{raidSCc}} Disk / {{(raidSCc / 11) * SASC * 12}} TiB</td>
-            <td align="center">{{raidSCd}} Disk / {{(raidSCd / 4) * SASC * 6}} TiB</td>
-            <td align="center">{{raidSCe}} Disk / {{(raidSCe / 6) * SASC * 8}} TiB</td>
-            <td align="center">{{raidSCf}} Disk / {{(raidSCf / 8) * SASC * 10}} TiB</td>
-            <td align="center">{{raidSCg}} Disk / {{(raidSCg / 10) * SASC * 12}} TiB</td>
-            <td align="center">{{raidSCh}} Disk / {{(raidSCh / 12) * SASC * 14}} TiB</td>
-            <td align="center">{{raidSCi}} Disk / {{(raidSCi / 14) * SASC * 16}} TiB</td>
+            <td align="center">{{raidSC}} Disk / {{capaSC}} TiB </td>
+            <td align="center">{{raidSCb}} Disk / {{capaSCb}} TiB </td>
+            <td align="center">{{raidSCc}} Disk / {{capaSCc}} TiB </td>
+            <td align="center">{{raidSCd}} Disk / {{capaSCd}} TiB </td>
+            <td align="center">{{raidSCe}} Disk / {{capaSCe}} TiB </td>
+            <td align="center">{{raidSCf}} Disk / {{capaSCf}} TiB </td>
+            <td align="center">{{raidSCg}} Disk / {{capaSCg}} TiB </td>
+            <td align="center">{{raidSCh}} Disk / {{capaSCh}} TiB </td>
+            <td align="center">{{raidSCi}} Disk / {{capaSCi}} TiB </td>
           </tr>
           <tr>
             <td>NL-SAS 7.2K 4TB</td>
-            <td align="center">{{raidNSA}} Disk / {{(raidNSA / 5) * NLSASA * 4}} TiB</td>
-            <td align="center">{{raidNSAb}} Disk / {{(raidNSAb / 8) * NLSASA * 9}} TiB</td>
-            <td align="center">{{raidNSAc}} Disk / {{(raidNSAc / 11) * NLSASA * 12}} TiB</td>
-            <td align="center">{{raidNSAd}} Disk / {{(raidNSAd / 4) * NLSASA * 6}} TiB</td>
-            <td align="center">{{raidNSAe}} Disk / {{(raidNSAe / 6) * NLSASA * 8}} TiB</td>
-            <td align="center">{{raidNSAf}} Disk / {{(raidNSAf / 8) * NLSASA * 10}} TiB</td>
-            <td align="center">{{raidNSAg}} Disk / {{(raidNSAg / 10) * NLSASA * 12}} TiB</td>
-            <td align="center">{{raidNSAh}} Disk / {{(raidNSAh / 12) * NLSASA * 14}} TiB</td>
-            <td align="center">{{raidNSAi}} Disk / {{(raidNSAi / 14) * NLSASA * 16}} TiB</td>
+            <td align="center">{{raidNSA}} Disk / {{capaNSA}} TiB </td>
+            <td align="center">{{raidNSAb}} Disk / {{capaNSAb}} TiB </td>
+            <td align="center">{{raidNSAc}} Disk / {{capaNSAc}} TiB </td>
+            <td align="center">{{raidNSAd}} Disk / {{capaNSAd}} TiB </td>
+            <td align="center">{{raidNSAe}} Disk / {{capaNSAe}} TiB </td>
+            <td align="center">{{raidNSAf}} Disk / {{capaNSAf}} TiB </td>
+            <td align="center">{{raidNSAg}} Disk / {{capaNSAg}} TiB </td>
+            <td align="center">{{raidNSAh}} Disk / {{capaNSAh}} TiB </td>
+            <td align="center">{{raidNSAi}} Disk / {{capaNSAi}} TiB </td>
           </tr>
           <tr>
             <td>NL-SAS 7.2K 6TB</td>
-            <td align="center">{{raidNSB}} Disk / {{(raidNSB / 5) * NLSASB * 4}} TiB</td>
-            <td align="center">{{raidNSBb}} Disk / {{(raidNSBb / 8) * NLSASB * 9}} TiB</td>
-            <td align="center">{{raidNSBc}} Disk / {{(raidNSBc / 11) * NLSASB * 12}} TiB</td>
-            <td align="center">{{raidNSBd}} Disk / {{(raidNSBd / 4) * NLSASB * 6}} TiB</td>
-            <td align="center">{{raidNSBe}} Disk / {{(raidNSBe / 6) * NLSASB * 8}} TiB</td>
-            <td align="center">{{raidNSBf}} Disk / {{(raidNSBf / 8) * NLSASB * 10}} TiB</td>
-            <td align="center">{{raidNSBg}} Disk / {{(raidNSBg / 10) * NLSASB * 12}} TiB</td>
-            <td align="center">{{raidNSBh}} Disk / {{(raidNSBh / 12) * NLSASB * 14}} TiB</td>
-            <td align="center">{{raidNSBi}} Disk / {{(raidNSBi / 14) * NLSASB * 16}} TiB</td>
+            <td align="center">{{raidNSB}} Disk / {{capaNSB}} TiB </td>
+            <td align="center">{{raidNSBb}} Disk / {{capaNSBb}} TiB </td>
+            <td align="center">{{raidNSBc}} Disk / {{capaNSBc}} TiB </td>
+            <td align="center">{{raidNSBd}} Disk / {{capaNSBd}} TiB </td>
+            <td align="center">{{raidNSBe}} Disk / {{capaNSBe}} TiB </td>
+            <td align="center">{{raidNSBf}} Disk / {{capaNSBf}} TiB </td>
+            <td align="center">{{raidNSBg}} Disk / {{capaNSBg}} TiB </td>
+            <td align="center">{{raidNSBh}} Disk / {{capaNSBh}} TiB </td>
+            <td align="center">{{raidNSBi}} Disk / {{capaNSBi}} TiB </td>
           </tr>
           <tr>
             <td>NL-SAS 7.2K 12TB</td>
-            <td align="center">{{raidNSC}} Disk / {{(raidNSC / 5) * NLSASC * 4}} TiB</td>
-            <td align="center">{{raidNSCb}} Disk / {{(raidNSCb / 8) * NLSASC * 9}} TiB</td>
-            <td align="center">{{raidNSCc}} Disk / {{(raidNSCc / 11) * NLSASC * 12}} TiB</td>
-            <td align="center">{{raidNSCd}} Disk / {{(raidNSCd / 4) * NLSASC * 6}} TiB</td>
-            <td align="center">{{raidNSCe}} Disk / {{(raidNSCe / 6) * NLSASC * 8}} TiB</td>
-            <td align="center">{{raidNSCf}} Disk / {{(raidNSCf / 8) * NLSASC * 10}} TiB</td>
-            <td align="center">{{raidNSCg}} Disk / {{(raidNSCg / 10) * NLSASC * 12}} TiB</td>
-            <td align="center">{{raidNSCh}} Disk / {{(raidNSCh / 12) * NLSASC * 14}} TiB</td>
-            <td align="center">{{raidNSCi}} Disk / {{(raidNSCi / 14) * NLSASC * 16}} TiB</td>
+            <td align="center">{{raidNSC}} Disk / {{capaNSC}} TiB </td>
+            <td align="center">{{raidNSCb}} Disk / {{capaNSCb}} TiB </td>
+            <td align="center">{{raidNSCc}} Disk / {{capaNSCc}} TiB </td>
+            <td align="center">{{raidNSCd}} Disk / {{capaNSCd}} TiB </td>
+            <td align="center">{{raidNSCe}} Disk / {{capaNSCe}} TiB </td>
+            <td align="center">{{raidNSCf}} Disk / {{capaNSCf}} TiB </td>
+            <td align="center">{{raidNSCg}} Disk / {{capaNSCg}} TiB </td>
+            <td align="center">{{raidNSCh}} Disk / {{capaNSCh}} TiB </td>
+            <td align="center">{{raidNSCi}} Disk / {{capaNSCi}} TiB </td>
           </tr>
         </tbody>
       </table>
@@ -665,396 +654,397 @@
 
         /* ここからcapacity*/
         capaA: function () {
-          return Math.ceil(this.a / this.flashA) * this.raidFiveFour * this.flashA
+          return Math.round(Math.ceil((this.a / this.flashA) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.flashA * this.raidFiveFour * 100) / 100
         },
         capaAb: function () {
-          return Math.ceil((this.a / this.flashA) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.flashA) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.flashA * this.raidFiveEight * 100) / 100
         },
         capaAc: function () {
-          return Math.ceil((this.a / this.flashA) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.flashA) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.flashA * this.raidFiveTwelve * 100) / 100
         },
         capaAd: function () {
-          return Math.ceil((this.a / this.flashA) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.flashA) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.flashA * this.raidSixFour * 100) / 100
         },
         capaAe: function () {
-          return Math.ceil((this.a / this.flashA) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.flashA) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.flashA * this.raidSixSix * 100) / 100
         },
         capaAf: function () {
-          return Math.ceil((this.a / this.flashA) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.flashA) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.flashA * this.raidSixEight * 100) / 100
         },
         capaAg: function () {
-          return Math.ceil((this.a / this.flashA) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.flashA) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.flashA * this.raidSixTen * 100) / 100
         },
         capaAh: function () {
-          return Math.ceil((this.a / this.flashA) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.flashA) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.flashA * this.raidSixTwelve * 100) / 100
         },
         capaAi: function () {
-          return Math.ceil((this.a / this.flashA) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.flashA) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.flashA * this.raidSixFourteen * 100) / 100
         },
 
         capaB: function () {
-          return Math.ceil((this.a / this.flashB) / this.raidFiveFour) * (this.raidFiveFour + 1)
+          return Math.round(Math.ceil((this.a / this.flashB) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.flashB * this.raidFiveFour * 100) / 100
         },
         capaBb: function () {
-          return Math.ceil((this.a / this.flashB) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.flashB) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.flashB * this.raidFiveEight * 100) / 100
         },
         capaBc: function () {
-          return Math.ceil((this.a / this.flashB) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.flashB) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.flashB * this.raidFiveTwelve * 100) / 100
         },
         capaBd: function () {
-          return Math.ceil((this.a / this.flashB) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.flashB) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.flashB * this.raidSixFour * 100) / 100
         },
         capaBe: function () {
-          return Math.ceil((this.a / this.flashB) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.flashB) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.flashB * this.raidSixSix * 100) / 100
         },
         capaBf: function () {
-          return Math.ceil((this.a / this.flashB) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.flashB) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.flashB * this.raidSixEight * 100) / 100
         },
         capaBg: function () {
-          return Math.ceil((this.a / this.flashB) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.flashB) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.flashB * this.raidSixTen * 100) / 100
         },
         capaBh: function () {
-          return Math.ceil((this.a / this.flashB) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.flashB) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.flashB * this.raidSixTwelve * 100) / 100
         },
         capaBi: function () {
-          return Math.ceil((this.a / this.flashB) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.flashB) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.flashB * this.raidSixFourteen * 100) / 100
         },
 
         capaC: function () {
-          return Math.ceil((this.a / this.flashC) / this.raidFiveFour) * (this.raidFiveFour + 1)
+          return Math.round(Math.ceil((this.a / this.flashC) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.flashC * this.raidFiveFour * 100) / 100
         },
         capaCb: function () {
-          return Math.ceil((this.a / this.flashC) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.flashC) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.flashC * this.raidFiveEight * 100) / 100
         },
         capaCc: function () {
-          return Math.ceil((this.a / this.flashC) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.flashC) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.flashC * this.raidFiveTwelve * 100) / 100
         },
         capaCd: function () {
-          return Math.ceil((this.a / this.flashC) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.flashC) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.flashC * this.raidSixFour * 100) / 100
         },
         capaCe: function () {
-          return Math.ceil((this.a / this.flashC) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.flashC) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.flashC * this.raidSixSix * 100) / 100
         },
         capaCf: function () {
-          return Math.ceil((this.a / this.flashC) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.flashC) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.flashC * this.raidSixEight * 100) / 100
         },
         capaCg: function () {
-          return Math.ceil((this.a / this.flashC) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.flashC) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.flashC * this.raidSixTen * 100) / 100
         },
         capaCh: function () {
-          return Math.ceil((this.a / this.flashC) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.flashC) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.flashC * this.raidSixTwelve * 100) / 100
         },
         capaCi: function () {
-          return Math.ceil((this.a / this.flashC) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.flashC) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.flashC * this.raidSixFourteen * 100) / 100
         },
 
         capaD: function () {
-          return Math.ceil((this.a / this.flashD) / this.raidFiveFour) * (this.raidFiveFour + 1)
+          return Math.round(Math.ceil((this.a / this.flashD) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.flashD * this.raidFiveFour * 100) / 100
         },
         capaDb: function () {
-          return Math.ceil((this.a / this.flashD) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.flashD) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.flashD * this.raidFiveEight * 100) / 100
         },
         capaDc: function () {
-          return Math.ceil((this.a / this.flashD) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.flashD) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.flashD * this.raidFiveTwelve * 100) / 100
         },
         capaDd: function () {
-          return Math.ceil((this.a / this.flashD) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.flashD) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.flashD * this.raidSixFour * 100) / 100
         },
         capaDe: function () {
-          return Math.ceil((this.a / this.flashD) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.flashD) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.flashD * this.raidSixSix * 100) / 100
         },
         capaDf: function () {
-          return Math.ceil((this.a / this.flashD) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.flashD) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.flashD * this.raidSixEight * 100) / 100
         },
         capaDg: function () {
-          return Math.ceil((this.a / this.flashD) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.flashD) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.flashD * this.raidSixTen * 100) / 100
         },
         capaDh: function () {
-          return Math.ceil((this.a / this.flashD) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.flashD) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.flashD * this.raidSixTwelve * 100) / 100
         },
         capaDi: function () {
-          return Math.ceil((this.a / this.flashD) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.flashD) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.flashD * this.raidSixFourteen * 100) / 100
         },
 
         capaE: function () {
-          return Math.ceil((this.a / this.flashE) / this.raidFiveFour) * (this.raidFiveFour + 1)
+          return Math.round(Math.ceil((this.a / this.flashE) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.flashE * this.raidFiveFour * 100) / 100
         },
         capaEb: function () {
-          return Math.ceil((this.a / this.flashE) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.flashE) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.flashE * this.raidFiveEight * 100) / 100
         },
         capaEc: function () {
-          return Math.ceil((this.a / this.flashE) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.flashE) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.flashE * this.raidFiveTwelve * 100) / 100
         },
         capaEd: function () {
-          return Math.ceil((this.a / this.flashE) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.flashE) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.flashE * this.raidSixFour * 100) / 100
         },
         capaEe: function () {
-          return Math.ceil((this.a / this.flashE) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.flashE) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.flashE * this.raidSixSix * 100) / 100
         },
         capaEf: function () {
-          return Math.ceil((this.a / this.flashE) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.flashE) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.flashE * this.raidSixEight * 100) / 100
         },
         capaEg: function () {
-          return Math.ceil((this.a / this.flashE) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.flashE) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.flashE * this.raidSixTen * 100) / 100
         },
         capaEh: function () {
-          return Math.ceil((this.a / this.flashE) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.flashE) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.flashE * this.raidSixTwelve * 100) / 100
         },
         capaEi: function () {
-          return Math.ceil((this.a / this.flashE) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.flashE) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.flashE * this.raidSixFourteen * 100) / 100
         },
 
         capaF: function () {
-          return Math.ceil((this.a / this.flashF) / this.raidFiveFour) * (this.raidFiveFour + 1)
+          return Math.round(Math.ceil((this.a / this.flashF) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.flashF * this.raidFiveFour * 100) / 100
         },
         capaFb: function () {
-          return Math.ceil((this.a / this.flashF) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.flashF) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.flashF * this.raidFiveEight * 100) / 100
         },
         capaFc: function () {
-          return Math.ceil((this.a / this.flashF) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.flashF) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.flashF * this.raidFiveTwelve * 100) / 100
         },
         capaFd: function () {
-          return Math.ceil((this.a / this.flashF) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.flashF) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.flashF * this.raidSixFour * 100) / 100
         },
         capaFe: function () {
-          return Math.ceil((this.a / this.flashF) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.flashF) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.flashF * this.raidSixSix * 100) / 100
         },
         capaFf: function () {
-          return Math.ceil((this.a / this.flashF) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.flashF) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.flashF * this.raidSixEight * 100) / 100
         },
         capaFg: function () {
-          return Math.ceil((this.a / this.flashF) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.flashF) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.flashF * this.raidSixTen * 100) / 100
         },
         capaFh: function () {
-          return Math.ceil((this.a / this.flashF) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.flashF) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.flashF * this.raidSixTwelve * 100) / 100
         },
         capaFi: function () {
-          return Math.ceil((this.a / this.flashF) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.flashF) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.flashF * this.raidSixFourteen * 100) / 100
         },
 
         capaG: function () {
-          return Math.ceil((this.a / this.flashG) / this.raidFiveFour) * (this.raidFiveFour + 1)
+          return Math.round(Math.ceil((this.a / this.flashG) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.flashG * this.raidFiveFour * 100) / 100
         },
         capaGb: function () {
-          return Math.ceil((this.a / this.flashG) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.flashG) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.flashG * this.raidFiveEight * 100) / 100
         },
         capaGc: function () {
-          return Math.ceil((this.a / this.flashG) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.flashG) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.flashG * this.raidFiveTwelve * 100) / 100
         },
         capaGd: function () {
-          return Math.ceil((this.a / this.flashG) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.flashG) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.flashG * this.raidSixFour * 100) / 100
         },
         capaGe: function () {
-          return Math.ceil((this.a / this.flashG) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.flashG) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.flashG * this.raidSixSix * 100) / 100
         },
         capaGf: function () {
-          return Math.ceil((this.a / this.flashG) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.flashG) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.flashG * this.raidSixEight * 100) / 100
         },
         capaGg: function () {
-          return Math.ceil((this.a / this.flashG) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.flashG) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.flashG * this.raidSixTen * 100) / 100
         },
         capaGh: function () {
-          return Math.ceil((this.a / this.flashG) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.flashG) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.flashG * this.raidSixTwelve * 100) / 100
         },
         capaGi: function () {
-          return Math.ceil((this.a / this.flashG) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.flashG) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.flashG * this.raidSixFourteen * 100) / 100
         },
 
         capaH: function () {
-          return Math.ceil((this.a / this.flashH) / this.raidFiveFour) * (this.raidFiveFour + 1)
+          return Math.round(Math.ceil((this.a / this.flashH) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.flashH * this.raidFiveFour * 100) / 100
         },
         capaHb: function () {
-          return Math.ceil((this.a / this.flashH) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.flashH) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.flashH * this.raidFiveEight * 100) / 100
         },
         capaHc: function () {
-          return Math.ceil((this.a / this.flashH) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.flashH) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.flashH * this.raidFiveTwelve * 100) / 100
         },
         capaHd: function () {
-          return Math.ceil((this.a / this.flashH) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.flashH) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.flashH * this.raidSixFour * 100) / 100
         },
         capaHe: function () {
-          return Math.ceil((this.a / this.flashH) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.flashH) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.flashH * this.raidSixSix * 100) / 100
         },
         capaHf: function () {
-          return Math.ceil((this.a / this.flashH) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.flashH) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.flashH * this.raidSixEight * 100) / 100
         },
         capaHg: function () {
-          return Math.ceil((this.a / this.flashH) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.flashH) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.flashH * this.raidSixTen * 100) / 100
         },
         capaHh: function () {
-          return Math.ceil((this.a / this.flashH) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.flashH) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.flashH * this.raidSixTwelve * 100) / 100
         },
         capaHi: function () {
-          return Math.ceil((this.a / this.flashH) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.flashH) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.flashH * this.raidSixFourteen * 100) / 100
         },
 
         capaSA: function () {
-          return Math.ceil((this.a / this.SASA) / this.raidFiveFour) * (this.raidFiveFour + 1)
+          return Math.round(Math.ceil((this.a / this.SASA) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.SASA * this.raidFiveFour * 100) / 100
         },
         capaSAb: function () {
-          return Math.ceil((this.a / this.SASA) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.SASA) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.SASA * this.raidFiveEight * 100) / 100
         },
         capaSAc: function () {
-          return Math.ceil((this.a / this.SASA) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.SASA) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.SASA * this.raidFiveTwelve * 100) / 100
         },
         capaSAd: function () {
-          return Math.ceil((this.a / this.SASA) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.SASA) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.SASA * this.raidSixFour * 100) / 100
         },
         capaSAe: function () {
-          return Math.ceil((this.a / this.SASA) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.SASA) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.SASA * this.raidSixSix * 100) / 100
         },
         capaSAf: function () {
-          return Math.ceil((this.a / this.SASA) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.SASA) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.SASA * this.raidSixEight * 100) / 100
         },
         capaSAg: function () {
-          return Math.ceil((this.a / this.SASA) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.SASA) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.SASA * this.raidSixTen * 100) / 100
         },
         capaSAh: function () {
-          return Math.ceil((this.a / this.SASA) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.SASA) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.SASA * this.raidSixTwelve * 100) / 100
         },
         capaSAi: function () {
-          return Math.ceil((this.a / this.SASA) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.SASA) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.SASA * this.raidSixFourteen * 100) / 100
         },
 
         capaSB: function () {
-          return Math.ceil((this.a / this.SASB) / this.raidFiveFour) * (this.raidFiveFour + 1)
+          return Math.round(Math.ceil((this.a / this.SASB) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.SASB * this.raidFiveFour * 100) / 100
         },
         capaSBb: function () {
-          return Math.ceil((this.a / this.SASB) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.SASB) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.SASB * this.raidFiveEight * 100) / 100
         },
         capaSBc: function () {
-          return Math.ceil((this.a / this.SASB) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.SASB) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.SASB * this.raidFiveTwelve * 100) / 100
         },
         capaSBd: function () {
-          return Math.ceil((this.a / this.SASB) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.SASB) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.SASB * this.raidSixFour * 100) / 100
         },
         capaSBe: function () {
-          return Math.ceil((this.a / this.SASB) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.SASB) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.SASB * this.raidSixSix * 100) / 100
         },
         capaSBf: function () {
-          return Math.ceil((this.a / this.SASB) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.SASB) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.SASB * this.raidSixEight * 100) / 100
         },
         capaSBg: function () {
-          return Math.ceil((this.a / this.SASB) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.SASB) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.SASB * this.raidSixTen * 100) / 100
         },
         capaSBh: function () {
-          return Math.ceil((this.a / this.SASB) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.SASB) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.SASB * this.raidSixTwelve * 100) / 100
         },
         capaSBi: function () {
-          return Math.ceil((this.a / this.SASB) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.SASB) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.SASB * this.raidSixFourteen * 100) / 100
         },
 
         capaSC: function () {
-          return Math.ceil((this.a / this.SASC) / this.raidFiveFour) * (this.raidFiveFour + 1)
+          return Math.round(Math.ceil((this.a / this.SASC) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.SASC * this.raidFiveFour * 100) / 100
         },
         capaSCb: function () {
-          return Math.ceil((this.a / this.SASC) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.SASC) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.SASC * this.raidFiveEight * 100) / 100
         },
         capaSCc: function () {
-          return Math.ceil((this.a / this.SASC) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.SASC) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.SASC * this.raidFiveTwelve * 100) / 100
         },
         capaSCd: function () {
-          return Math.ceil((this.a / this.SASC) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.SASC) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.SASC * this.raidSixFour * 100) / 100
         },
         capaSCe: function () {
-          return Math.ceil((this.a / this.SASC) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.SASC) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.SASC * this.raidSixSix * 100) / 100
         },
         capaSCf: function () {
-          return Math.ceil((this.a / this.SASC) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.SASC) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.SASC * this.raidSixEight * 100) / 100
         },
         capaSCg: function () {
-          return Math.ceil((this.a / this.SASC) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.SASC) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.SASC * this.raidSixTen * 100) / 100
         },
         capaSCh: function () {
-          return Math.ceil((this.a / this.SASC) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.SASC) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.SASC * this.raidSixTwelve * 100) / 100
         },
         capaSCi: function () {
-          return Math.ceil((this.a / this.SASC) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.SASC) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.SASC * this.raidSixFourteen * 100) / 100
         },
 
         capaNSA: function () {
-          return Math.ceil((this.a / this.NLSASA) / this.raidFiveFour) * (this.raidFiveFour + 1)
+          return Math.round(Math.ceil((this.a / this.NLSASA) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.NLSASA * this.raidFiveFour * 100) / 100
         },
         capaNSAb: function () {
-          return Math.ceil((this.a / this.NLSASA) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.NLSASA) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.NLSASA * this.raidFiveEight * 100) / 100
         },
         capaNSAc: function () {
-          return Math.ceil((this.a / this.NLSASA) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.NLSASA) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.NLSASA * this.raidFiveTwelve * 100) / 100
         },
         capaNSAd: function () {
-          return Math.ceil((this.a / this.NLSASA) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASA) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.NLSASA * this.raidSixFour * 100) / 100
         },
         capaNSAe: function () {
-          return Math.ceil((this.a / this.NLSASA) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASA) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.NLSASA * this.raidSixSix * 100) / 100
         },
         capaNSAf: function () {
-          return Math.ceil((this.a / this.NLSASA) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASA) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.NLSASA * this.raidSixEight * 100) / 100
         },
         capaNSAg: function () {
-          return Math.ceil((this.a / this.NLSASA) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASA) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.NLSASA * this.raidSixTen * 100) / 100
         },
         capaNSAh: function () {
-          return Math.ceil((this.a / this.NLSASA) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASA) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.NLSASA * this.raidSixTwelve * 100) / 100
         },
         capaNSAi: function () {
-          return Math.ceil((this.a / this.NLSASA) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASA) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.NLSASA * this.raidSixFourteen * 100) / 100
         },
 
         capaNSB: function () {
-          return Math.ceil((this.a / this.NLSASB) / this.raidFiveFour) * (this.raidFiveFour + 1)
+          return Math.round(Math.ceil((this.a / this.NLSASB) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.NLSASB * this.raidFiveFour * 100) / 100
         },
         capaNSBb: function () {
-          return Math.ceil((this.a / this.NLSASB) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.NLSASB) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.NLSASB * this.raidFiveEight * 100) / 100
         },
         capaNSBc: function () {
-          return Math.ceil((this.a / this.NLSASB) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.NLSASB) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.NLSASB * this.raidFiveTwelve * 100) / 100
         },
         capaNSBd: function () {
-          return Math.ceil((this.a / this.NLSASB) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASB) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.NLSASB * this.raidSixFour * 100) / 100
         },
         capaNSBe: function () {
-          return Math.ceil((this.a / this.NLSASB) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASB) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.NLSASB * this.raidSixSix * 100) / 100
         },
         capaNSBf: function () {
-          return Math.ceil((this.a / this.NLSASB) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASB) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.NLSASB * this.raidSixEight * 100) / 100
         },
         capaNSBg: function () {
-          return Math.ceil((this.a / this.NLSASB) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASB) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.NLSASB * this.raidSixTen * 100) / 100
         },
         capaNSBh: function () {
-          return Math.ceil((this.a / this.NLSASB) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASB) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.NLSASB * this.raidSixTwelve * 100) / 100
         },
         capaNSBi: function () {
-          return Math.ceil((this.a / this.NLSASB) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASB) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.NLSASB * this.raidSixFourteen * 100) / 100
         },
 
         capaNSC: function () {
-          return Math.ceil((this.a / this.NLSASC) / this.raidFiveFour) * (this.raidFiveFour + 1)
+          return Math.round(Math.ceil((this.a / this.NLSASC) / this.raidFiveFour) * (this.raidFiveFour + 1) / (this.raidFiveFour + 1) * this.NLSASC * this.raidFiveFour * 100) / 100
         },
         capaNSCb: function () {
-          return Math.ceil((this.a / this.NLSASC) / this.raidFiveEight) * (this.raidFiveEight + 1)
+          return Math.round(Math.ceil((this.a / this.NLSASC) / this.raidFiveEight) * (this.raidFiveEight + 1) / (this.raidFiveEight + 1) * this.NLSASC * this.raidFiveEight * 100) / 100
         },
         capaNSCc: function () {
-          return Math.ceil((this.a / this.NLSASC) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1)
+          return Math.round(Math.ceil((this.a / this.NLSASC) / this.raidFiveTwelve) * (this.raidFiveTwelve + 1) / (this.raidFiveTwelve + 1) * this.NLSASC * this.raidFiveTwelve * 100) / 100
         },
         capaNSCd: function () {
-          return Math.ceil((this.a / this.NLSASC) / this.raidSixFour) * (this.raidSixFour + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASC) / this.raidSixFour) * (this.raidSixFour + 2) / (this.raidSixFour + 2) * this.NLSASC * this.raidSixFour * 100) / 100
         },
         capaNSCe: function () {
-          return Math.ceil((this.a / this.NLSASC) / this.raidSixSix) * (this.raidSixSix + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASC) / this.raidSixSix) * (this.raidSixSix + 2) / (this.raidSixSix + 2) * this.NLSASC * this.raidSixSix * 100) / 100
         },
         capaNSCf: function () {
-          return Math.ceil((this.a / this.NLSASC) / this.raidSixEight) * (this.raidSixEight + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASC) / this.raidSixEight) * (this.raidSixEight + 2) / (this.raidSixEight + 2) * this.NLSASC * this.raidSixEight * 100) / 100
         },
         capaNSCg: function () {
-          return Math.ceil((this.a / this.NLSASC) / this.raidSixTen) * (this.raidSixTen + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASC) / this.raidSixTen) * (this.raidSixTen + 2) / (this.raidSixTen + 2) * this.NLSASC * this.raidSixTen * 100) / 100
         },
         capaNSCh: function () {
-          return Math.ceil((this.a / this.NLSASC) / this.raidSixTwelve) * (this.raidSixTwelve + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASC) / this.raidSixTwelve) * (this.raidSixTwelve + 2) / (this.raidSixTwelve + 2) * this.NLSASC * this.raidSixTwelve * 100) / 100
         },
         capaNSCi: function () {
-          return Math.ceil((this.a / this.NLSASC) / this.raidSixFourteen) * (this.raidSixFourteen + 2)
+          return Math.round(Math.ceil((this.a / this.NLSASC) / this.raidSixFourteen) * (this.raidSixFourteen + 2) / (this.raidSixFourteen + 2) * this.NLSASC * this.raidSixFourteen * 100) / 100
         },
+
       },
     });
   </script>
